@@ -28,7 +28,7 @@ const Calendar = () => {
                     
                 </select>
                 </div>
-                <div className="grid md:grid-cols-4 gap-10 pt-20 pb-10 border-b border-b-blue2">
+                <div className="grid md:grid-cols-4 grid-cols-3 gap-10 pt-20 pb-10 border-b border-b-blue2">
                     <CalendarCard title="PhD Defences" date="20 February 2023" desc="PhD defence by T.J.H. Jonkers" />
                     <CalendarCard title="PhD Defences" date="20 February 2023" desc="PhD defence by T.J.H. Jonkers" />
                     <CalendarCard title="PhD Defences" date="20 February 2023" desc="PhD defence by T.J.H. Jonkers" />

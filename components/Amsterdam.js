@@ -9,8 +9,8 @@ const Amsterdam = () => {
     return ( 
         <Wrapper>
             <div className="bg-white py-10 relative overflow-hidden">
-                <h2 className="px-32 text-4xl text-red-800 font-light">We are VU Amsterdam</h2>
-                <div className="py-40 inline-flex flex-nowrap overflow-x-auto justify-center">
+                <h2 className="md:px-32 px-5 text-4xl text-red-800 font-light">We are VU Amsterdam</h2>
+                <div className="md:py-40 py-5 inline-flex flex-nowrap overflow-x-auto justify-center">
                     <AmsterdamCard img={img1} />
                     <AmsterdamCard img={img2} />
                     <AmsterdamCard img={img3} />

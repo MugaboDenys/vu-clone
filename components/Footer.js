@@ -6,8 +6,8 @@ import arrow2 from "../public/assets/arrow-right-1.svg"
 const Footer = () => {
   return (
     <Wrapper>
-      <div className="px-32 py-20 bg-blue2 ">
-        <div className="flex gap-3 font-semibold">
+      <div className="md:px-32 px-5 py-20 bg-blue2 ">
+        <div className="flex flex-wrap  gap-3 font-semibold">
             {[
             "Privacy Statement",
             "Disclaimer",
