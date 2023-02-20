@@ -4,13 +4,13 @@ import arrow2 from "../public/assets/arrow-right.svg"
 
 const NewsCard1 = (props) => {
   return (
-    <Link href={'/'} className="flex gap-5 relative w-[40rem]">
+    <Link href={'/'} className="flex gap-5 relative md:w-[40rem]">
       <div className="w-[27rem]">
-        <Image src={props.img} alt="" className="h-[13rem]" />
+        <Image src={props.img} alt="" className="md:h-[13rem] h-[7rem]" />
       </div>
       <div className="w-[27rem] px-3">
         <h2 className="font-bold text-sm text-indigo-800">{props.date}</h2>
-        <h4 className="text-2xl">{props.desc}</h4>
+        <h4 className="md:text-2xl text-lg">{props.desc}</h4>
       </div>
       <Image
         src={arrow2}

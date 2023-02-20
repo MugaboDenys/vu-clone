@@ -3,6 +3,7 @@ import Link from "next/link";
 import arrowblue from "../public/assets/arrow-right-blue.svg";
 import img2 from "../public/assets/2.jpg";
 import search from "../public/assets/search.svg";
+import search2 from "../public/assets/search2.svg";
 import Wrapper from "./Wrapper";
 
 const Hero = () => {
@@ -15,14 +16,14 @@ const Hero = () => {
           </h3>
         </div>
         <div className="md:flex md:px-32 items-center mt-20 relative z-20">
-          <div className="md:w-1/2 bg-blue2 md:py-10 pt-4  flex">
-            <form action="" className="bg-blue2 flex">
+          <div className="md:w-1/2 bg-blue2 md:py-10 py-5  flex">
+            <form action="" className="bg-blue2 flex pb-2 mx-2 border-b-2">
               <input
                 type="text"
                 placeholder="Search..."
-                className="mx-5 bg-transparent w-full placeholder-blue-200 md:text-2xl text-lg outline-none border-b-2"
+                className="mx-5 bg-transparent w-full placeholder-blue-200 md:text-2xl text-lg outline-none "
               />
-              <Image src={search} alt="" width={30} className="ml-20"/>
+              <Image src={search2} alt="" width={30} className="ml-20"/>
             </form>
           </div>
           <Link

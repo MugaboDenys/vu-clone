@@ -29,7 +29,7 @@ const Impact = () => {
                 className="w-full md:h-[575px] object-cover"
                 alt=""
               />
-              <div className="flex gap-5 absolute right-0 bottom-[19rem] bg-orange-200 w-fit px-5 py-4">
+              <div className="flex gap-5 md:hidden absolute right-0 bottom-[19rem] bg-orange-200 w-fit px-5 py-4">
                     <BsChevronLeft
                       className="text-black text-2xl cursor-pointer"
                       alt=""

@@ -13,7 +13,7 @@ import Link from "next/link";
 const News = () => {
     return ( 
         <Wrapper>
-            <div className="bg-gray2 px-32 py-20">
+            <div className="bg-gray2 md:px-32 px-5 md:py-20 py-5">
                 <h2 className="text-3xl font-light text-indigo-900">News</h2>
                 {/* <div className="">
                     {[
@@ -34,12 +34,12 @@ const News = () => {
                         )
                     })}
                 </div> */}
-                <div className="pt-10 flex gap-5">
+                <div className="pt-10 md:flex gap-5 space-y-3">
                     <div className="space-y-10">
                         <NewsCard1 img={news1} date="08 Feb 2023" desc="Robot bird gives singing lessons to zebra finches" />
                         <NewsCard1 img={news2} date="15 Feb 2023" desc="Robot bird gives singing lessons to zebra finches" />
                     </div>
-                    <div className="grid grid-rows-3">
+                    <div className="grid grid-rows-3 gap-3">
                         <NewsCard2 img={news3} desc="EU grant to improve mental well-being of Ukrainian refugees sapiens" />
                         <NewsCard2 img={news4} desc="'Sapiens' partnership ended" />
                         <NewsCard2 img={news5}  desc="ERC Consolidator Grant for Wouter "/>

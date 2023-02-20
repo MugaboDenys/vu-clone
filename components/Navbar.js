@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link href={"/"}>NL</Link>
           <Image src={profile} alt="" className="w-6 cursor-pointer" />
           <Image src={search} alt="" className="w-8 cursor-pointer" />
-          <Image src={menu} alt="" className="w-8 cursor-pointer" />
+          <Image src={menu} alt="" className="w-8 cursor-pointer" onClick={handleOpenMenu} />
         </div>
       </div>
       </div>
