@@ -6,8 +6,8 @@ import {BsChevronLeft, BsChevronRight} from "react-icons/bs"
 const Calendar = () => {
     return ( 
         <Wrapper>
-            <div className="bg-white px-32 py-20 ">
-                <div className="grid grid-cols-4 gap-5">
+            <div className="bg-white md:px-32 px-5 py-20 ">
+                <div className="grid md:grid-cols-4 grid-cols-2 gap-5">
                 <h2 className="text-4xl text-blue2 col-span-2">Calendar</h2>
                 <select name="Categories" id="" className=" text-2xl px-5" >
                         <option value="">All Categories</option>
@@ -28,7 +28,7 @@ const Calendar = () => {
                     
                 </select>
                 </div>
-                <div className="grid grid-cols-4 gap-10 pt-20 pb-10 border-b border-b-blue2">
+                <div className="grid md:grid-cols-4 gap-10 pt-20 pb-10 border-b border-b-blue2">
                     <CalendarCard title="PhD Defences" date="20 February 2023" desc="PhD defence by T.J.H. Jonkers" />
                     <CalendarCard title="PhD Defences" date="20 February 2023" desc="PhD defence by T.J.H. Jonkers" />
                     <CalendarCard title="PhD Defences" date="20 February 2023" desc="PhD defence by T.J.H. Jonkers" />
