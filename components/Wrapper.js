@@ -2,7 +2,7 @@ import Footer from "./Footer";
 
 const Wrapper = ({children, className}) => {
     return ( 
-        <div className="max-w-7xl mx-auto">
+        <div className="md:max-w-6.5xl mx-auto">
             
             {children}
             

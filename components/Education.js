@@ -9,23 +9,24 @@ import Card1 from "./Card1";
 const Education = () => {
     return ( 
         <Wrapper>
-            <div className="relative z-10 bg-neutral-100 pt-20 px-10">
+            <div className="relative z-10 bg-neutral-100 md:pt-20 pt-5 md:px-10 px-5">
                 <div className="grid grid-cols-4 gap-10 ">
-                    <div className="flex gap-10">
-                        <Image src={graduate} width={30} alt="" /> <h2 className="font-semibold ">5.190 international students</h2>
+                    <div className="flex flex-col md:flex-row md:gap-10 gap-2">
+                        <Image src={graduate} width={30} alt="" /> <h2 className="md:font-semibold ">5.190 international students</h2>
                     </div>
-                    <div className="flex gap-10">
-                        <Image src={graduate} width={30} alt="" /> <h2 className="font-semibold ">5.190 international students</h2></div>
-                    <div className="flex gap-10">
-                    <Image src={graduate} width={30} alt="" /> <h2 className="font-semibold ">5.190 international students</h2>
+                    <div className="flex flex-col md:flex-row md:gap-10 gap-2">
+                        <Image src={graduate} width={30} alt="" /> <h2 className="md:font-semibold ">5.190 international students</h2></div>
+                    <div className="flex flex-col md:flex-row md:gap-10 gap-2">
+                    <Image src={graduate} width={30} alt="" /> <h2 className="md:font-semibold ">5.190 international students</h2>
                     </div>
-                    <div className="flex gap-10">
-                    <Image src={graduate} width={30} alt="" /> <h2 className="font-semibold">5.190 international students</h2>
+                    <div className="flex flex-col md:flex-row md:gap-10 gap-2">
+                    <Image src={graduate} width={30} alt="" /> <h2 className="md:font-semibold">5.190 international students</h2>
                     </div>
+                    
                 </div>
-                <div className="mt-20 flex gap-10 mx-20">
+                <div className="mt-20 md:flex gap-x-10 space-y-4 md:space-y-0  md:mx-20">
                     <Card1 title={"Education"} link="Barchelor" />
-                    <Card1 title={"Education"} link="Barchelor" />
+                    <Card1 title={"Research"} link="Barchelor" />
                     
                 </div>
             </div>

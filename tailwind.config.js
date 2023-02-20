@@ -17,6 +17,9 @@ module.exports = {
         gray1 : "#eeebe9",
         gray2: "#faf7f5",
         blue2 : "#0077b3"
+      },
+      maxWidth : {
+        "6.5xl" : "1252px"
       }
     },
     

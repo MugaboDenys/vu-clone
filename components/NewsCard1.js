@@ -9,8 +9,8 @@ const NewsCard1 = (props) => {
         <Image src={props.img} alt="" className="h-[13rem]" />
       </div>
       <div className="w-[27rem] px-3">
-        <h2 className="font-bold text-sm text-indigo-800">15 Feb 2023</h2>
-        <h4 className="text-2xl">Earthquakes Turkey and Syria</h4>
+        <h2 className="font-bold text-sm text-indigo-800">{props.date}</h2>
+        <h4 className="text-2xl">{props.desc}</h4>
       </div>
       <Image
         src={arrow2}

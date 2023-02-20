@@ -36,13 +36,13 @@ const News = () => {
                 </div> */}
                 <div className="pt-10 flex gap-5">
                     <div className="space-y-10">
-                        <NewsCard1 img={news1} />
-                        <NewsCard1 img={news2} />
+                        <NewsCard1 img={news1} date="08 Feb 2023" desc="Robot bird gives singing lessons to zebra finches" />
+                        <NewsCard1 img={news2} date="15 Feb 2023" desc="Robot bird gives singing lessons to zebra finches" />
                     </div>
                     <div className="grid grid-rows-3">
-                        <NewsCard2 img={news3} />
-                        <NewsCard2 img={news3} />
-                        <NewsCard2 img={news3} />
+                        <NewsCard2 img={news3} desc="EU grant to improve mental well-being of Ukrainian refugees sapiens" />
+                        <NewsCard2 img={news4} desc="'Sapiens' partnership ended" />
+                        <NewsCard2 img={news5}  desc="ERC Consolidator Grant for Wouter "/>
                     </div>
                 </div>
                 <div className="flex justify-center pt-20 gap-5">

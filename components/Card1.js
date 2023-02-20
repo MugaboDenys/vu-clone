@@ -5,7 +5,7 @@ import arrow2 from "../public/assets/arrow-right.svg";
 
 const Card1 = (props) => {
   return (
-    <div className="w-1/2 bg-white py-5 px-5 shadow-2xl">
+    <div className="md:w-1/2 bg-white py-5 px-5 shadow-2xl">
       <div className="flex  justify-between pb-5">
         <h2 className="text-blue2 text-4xl">{props.title}</h2>
         <Image src={arrow} width={30} alt="" />
