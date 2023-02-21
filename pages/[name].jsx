@@ -10,7 +10,7 @@ export default function Page() {
     <div className='h-screen grid'>
        <div className='m-auto'>
        <h4 className='text-3xl mb-6 max-w-md font-bold'><span className='capitalize font-bold text-[#333333]'>{name}</span> Page</h4>
-        <Link href="/" className='underline text-blue-500 text-xl'>Back Home</Link>
+        <Link href="/" className='cursor-pointer text-center text-red-900 text-3xl font-bold'>Back Home</Link>
        </div>
     </div>
   )

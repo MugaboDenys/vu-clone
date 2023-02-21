@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Wrapper from "./Wrapper";
-import arrow2 from "../public/assets/arrow-right-1.svg"
+import arrow2 from "../../public/assets/arrow-right-1.svg"
 
 const Footer = () => {
   return (

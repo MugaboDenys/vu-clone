@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo1 from "../public/assets/logo1.svg";
-import profile from "../public/assets/profile.svg";
-import search from "../public/assets/search.svg";
-import menu from "../public/assets/menu.svg";
+import logo1 from "../../public/assets/logo1.svg";
+import profile from "../../public/assets/profile.svg";
+import search from "../../public/assets/search.svg";
+import menu from "../../public/assets/menu.svg";
 import Wrapper from "./Wrapper";
+import {IoCloseOutline} from "react-icons/io5"
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -20,41 +21,29 @@ const Navbar = () => {
     <>
     <Wrapper>
       <div className="relative w-full">
-      <div className="flex bg-white shadow-2xl fixed w-full max-w-6.5xl mx-auto z-30">
-        <div className="px-7 mr-auto py-4">
+      <div className="flex bg-white shadow-4xl fixed w-full max-w-6.5xl mx-auto z-30">
+        <div className="px-7 mr-auto md:py-4 py-2">
           <Image src={logo1} alt="" />
         </div>
         <div className="flex items-center md:gap-5 gap-2 bg-gray2 md:px-8 px-5">
-          <Link href={"/"}>NL</Link>
+          <Link href={"/"} className="text-xl">NL</Link>
           <Image src={profile} alt="" className="w-6 cursor-pointer" />
           <Image src={search} alt="" className="w-8 cursor-pointer" />
           <Image src={menu} alt="" className="w-8 cursor-pointer" onClick={handleOpenMenu} />
         </div>
       </div>
       </div>
-    </Wrapper>
-    {menuIsOpen ? (
-        <section className="fixed inset-0 z-50 grid h-screen mx-auto bg-white max-w-7xl">
+      {menuIsOpen ? (
+        <section className="fixed inset-0 z-50 grid h-screen mx-auto bg-white max-w-6.5xl">
           <div className="overflow-y-scroll">
             <div
               onClick={handleOpenMenu}
               className="bg-[#F2EFED] ml-auto p-5 cursor-pointer absolute top-0 right-0"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className=""
-                width="30px"
-                height="30px"
-                viewBox="0 0 64 64"
-                fill="none"
-                stroke="#000000"
-              >
-                <line x1="16" y1="16" x2="48" y2="48" />
-                <line x1="48" y1="16" x2="16" y2="48" />
-              </svg>
+              <IoCloseOutline className={`text-4xl  hover:rotate-180 duration-500 ease-out`} />
             </div>
             <div className="">
-              <div className="flex flex-col justify-between space-y-10 cursor-pointer pt-52 px-36">
+              <div className="flex flex-col justify-between md:space-y-10 space-y-7 cursor-pointer md:pt-52 pt-32 md:px-36 px-10">
                 {[
                   "Study at VU Amsterdam",
                   "Research",
@@ -67,7 +56,7 @@ const Navbar = () => {
                   return (
                     <Link key={i} href={e}>
                       <div className="flex justify-between max-w-sm">
-                        <p className="text-[24px] leading-[30px] whitespace-nowrap font-semibold">
+                        <p className="md:text-[24px] text-xl whitespace-nowrap font-semibold">
                           {" "}
                           {e}
                         </p>
@@ -115,6 +104,8 @@ const Navbar = () => {
           </div>
         </section>
       ) : null}
+    </Wrapper>
+    
     </>
     
   );

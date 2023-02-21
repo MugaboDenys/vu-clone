@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import arrow2 from "../public/assets/arrow-right.svg"
+import arrow2 from "../../public/assets/arrow-right.svg"
 
 const NewsCard1 = (props) => {
   return (
@@ -9,14 +9,14 @@ const NewsCard1 = (props) => {
         <Image src={props.img} alt="" className="md:h-[13rem] h-[7rem]" />
       </div>
       <div className="w-[27rem] px-3">
-        <h2 className="font-bold text-sm text-indigo-800">{props.date}</h2>
+        <h2 className="font-bold text-lg text-indigo-800">{props.date}</h2>
         <h4 className="md:text-2xl text-lg">{props.desc}</h4>
       </div>
       <Image
         src={arrow2}
         alt=""
         width={20}
-        className="absolute bottom-3 right-3"
+        className="absolute bottom-0 right-0"
       />
     </Link>
   );

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import arrow2 from "../public/assets/arrow-right.svg";
+import arrow2 from "../../public/assets/arrow-right.svg";
 
 const FeaturesCard = (props) => {
   return (

@@ -1,13 +1,13 @@
-import Wrapper from "./Wrapper";
-import news1 from "../public/assets/news1.png"
-import news2 from "../public/assets/news2.png"
-import news3 from "../public/assets/news3.jpg"
-import news4 from "../public/assets/news4.jpg"
-import news5 from "../public/assets/news5.png"
-import arrow2 from "../public/assets/arrow-right.svg"
+import Wrapper from "../Layout/Wrapper";
+import news1 from "../../public/assets/news1.png"
+import news2 from "../../public/assets/news2.png"
+import news3 from "../../public/assets/news3.jpg"
+import news4 from "../../public/assets/news4.jpg"
+import news5 from "../../public/assets/news5.png"
+import arrow2 from "../../public/assets/arrow-right.svg"
 import Image from "next/image";
-import NewsCard1 from "./NewsCard1";
-import NewsCard2 from "./NewsCard2";
+import NewsCard1 from "../UI/NewsCard1";
+import NewsCard2 from "../UI/NewsCard2";
 import Link from "next/link";
 
 const News = () => {
@@ -36,7 +36,7 @@ const News = () => {
                 </div> */}
                 <div className="pt-10 md:flex gap-5 space-y-3">
                     <div className="space-y-10">
-                        <NewsCard1 img={news1} date="08 Feb 2023" desc="Robot bird gives singing lessons to zebra finches" />
+                        <NewsCard1 img={news1} date="08 Feb 2023" desc="Earthquakes Turkey and Syria" />
                         <NewsCard1 img={news2} date="15 Feb 2023" desc="Robot bird gives singing lessons to zebra finches" />
                     </div>
                     <div className="grid grid-rows-3 gap-3">
@@ -46,7 +46,7 @@ const News = () => {
                     </div>
                 </div>
                 <div className="flex justify-center pt-20 gap-5">
-                    <Link href={'/'} className="font-semibold text-xl">News overview</Link>
+                    <Link href={'/'} className="font-normal text-xl">News overview</Link>
                     <Image alt="" src={arrow2} width={20} />
                 </div>
             </div>
