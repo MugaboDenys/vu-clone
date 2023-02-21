@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="relative w-full">
       <div className="flex bg-white shadow-4xl fixed w-full max-w-6.5xl mx-auto z-30">
         <div className="px-7 mr-auto md:py-4 py-2">
-          <Image src={logo1} alt="" />
+          <Link href={'/'} ><Image src={logo1} alt="" /></Link>
         </div>
         <div className="flex items-center md:gap-5 gap-2 bg-gray2 md:px-8 px-5">
           <Link href={"/"} className="text-xl">NL</Link>

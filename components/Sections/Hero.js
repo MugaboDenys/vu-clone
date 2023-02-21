@@ -11,7 +11,7 @@ const Hero = () => {
       <div className=" bg-gray-100 md:h-[48rem] md:pt-32 pt-24 md:px-10">
         <div className="md:px-40">
           <h3 className="md:text-5xl text-4xl font-light md:px-14 px-5">
-            You don’t just become something, you become someone
+            You don{"'"}t just become something, you become someone
           </h3>
         </div>
         <div className="md:flex md:px-32 items-center md:mt-20 mt-8 relative z-20">
