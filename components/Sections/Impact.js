@@ -39,9 +39,9 @@ const Impact = () => {
                       onClick={() => slide.slideNext()}
                     />
                   </div>
-              <div className="md:absolute block bottom-4 md:right-72 right-0 bg-white shadow-lg md:w-[576px] h-[306px]">
-                <div className="h-5 md:border-b border-black"></div>
-                <div className="md:px-20 px-5 relative pt-10 md:pt-0 h-full">
+              <div className="md:absolute block impact bottom-4 md:right-72 right-0 bg-white shadow-lg md:w-[576px] h-[306px]">
+                <div className="h-6 md:border-b border-black"></div>
+                <div className="md:px-20 px-5 impact relative pt-10 md:pt-0 h-full">
                   <h4 className="text-2xl text-red-700 font-light md:pt-10">
                     Science to Impact
                   </h4>

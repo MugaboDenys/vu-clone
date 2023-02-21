@@ -50,8 +50,8 @@ const Education = () => {
           </div>
         </div>
         <div className="md:h-56 bg-gray2">
-          <div className="md:absolute flex justify-center w-full bottom-20">
-            <div className="mt-20 md:grid grid-cols-2 gap-x-10 space-y-4 md:space-y-0  md:mx-20">
+          <div className="md:absolute flex w-full bottom-20">
+            <div className="mt-20 w-full md:grid grid-cols-2 gap-x-5 space-y-4 md:space-y-0  md:mx-32">
               <div className="bg-white py-5 px-5 shadow-3xl">
                 <div className="flex  justify-between pb-5">
                   <h2 className="text-blue2 md:text-4xl text-3xl">Education</h2>

@@ -39,12 +39,7 @@ const Amsterdam = () => {
                         <SwiperSlide>
                             <AmsterdamCard  img={img3} words = "Gravitation Grant recipient Frank van Harmelen" />
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <AmsterdamCard  img={img3} words = "Gravitation Grant recipient Frank van Harmelen" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <AmsterdamCard  img={img3} words = "Gravitation Grant recipient Frank van Harmelen" />
-                        </SwiperSlide>
+                        
                 </Swiper>
                 </div>
                 <div className="hidden md:flex py-5 px-7 bg-orange-200 absolute right-0 bottom-4">

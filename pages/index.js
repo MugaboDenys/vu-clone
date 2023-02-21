@@ -27,7 +27,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="font-roboto font-light bg-gray1">
-        <Navbar/>
         <Hero/>
         <Education/>
         <Visit left="Do you also want to change your world?" right={`Visit the VU Master’s Event`}/>
@@ -39,7 +38,6 @@ export default function Home() {
         <Amsterdam/>
         <Look />
         <Features />
-        <Footer/>
       </main>
     </>
   );

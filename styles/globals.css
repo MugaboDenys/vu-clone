@@ -4,29 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.close{
-    -webkit-animation: rotate-center 1s ease-in-out both;
-	        animation: rotate-center 1s ease-in-out both;
-}
-
-
- @-webkit-keyframes close {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+.impact{   -webkit-clip-path: polygon(16% 0, 100% 0%, 100% 57%, 0 57%, 0 0, 10% 0, 14% 5%); clip-path: polygon(17% 0, 100% 0%, 100% 100%, 0 100%, 0 0, 11.2% 0, 14.1% 7%); }
+.scroll {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
   }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  .scroll::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
   }
-}
-@keyframes close {
-  0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}

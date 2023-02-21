@@ -34,7 +34,7 @@ const Hero = () => {
           </Link>
         </div>
         <div className="md:absolute  left-0 right-0 -bottom-40">
-          <Image src={img2} alt="" className="h-44 md:h-auto object-cover" />
+          <Image src={img2} alt="" className="h-44 md:h-auto object-cover mx-auto" />
         </div>
       </div>
     </Wrapper>

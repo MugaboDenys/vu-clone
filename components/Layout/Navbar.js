@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo1 from "../../public/assets/logo1.svg";
+import arrow from "../../public/assets/arrow-right.svg";
 import profile from "../../public/assets/profile.svg";
 import search from "../../public/assets/search.svg";
 import menu from "../../public/assets/menu.svg";
@@ -77,23 +78,7 @@ const Navbar = () => {
                             <line x1="5" y1="12" x2="19" y2="12" />
                           </svg>
                         ) : (
-                          <svg
-                            className="ml-36"
-                            Name="fill-[#000000]"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="30px"
-                            height="30px"
-                            viewBox="0 0 24 24"
-                            fill="#000000"
-                          >
-                            <path
-                              d="M20 12L4 12M20 12L14 18M20 12L14 6"
-                              stroke="#000000"
-                              stroke-width="1.1"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
+                          <Image src={arrow} width={20} alt=""  />
                         )}
                       </div>
                     </Link>
