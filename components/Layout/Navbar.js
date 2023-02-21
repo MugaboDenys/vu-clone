@@ -8,11 +8,17 @@ import menu from "../../public/assets/menu.svg";
 import Wrapper from "./Wrapper";
 import {IoCloseOutline} from "react-icons/io5"
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleOpenMenu = () => setMenuIsOpen(!menuIsOpen);
+
+  const dynamic = useRouter().asPath;
+  useEffect(() => setMenuIsOpen(false), [dynamic]);
+
   useEffect(() => {
     document.body.style.overflow = menuIsOpen ? "hidden" : "auto";
     return () => (document.body.style.overflow = "scroll");
